@@ -6,25 +6,7 @@
   "auth": [
     [],
     [],
-    [
-      [
-        "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
-        {
-          "function": {
-            "contract_fn": {
-              "contract_address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-              "function_name": "get_balance",
-              "args": [
-                {
-                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
-                }
-              ]
-            }
-          },
-          "sub_invocations": []
-        }
-      ]
-    ]
+    []
   ],
   "ledger": {
     "protocol_version": 21,
@@ -64,7 +46,7 @@
                           "symbol": "payments"
                         },
                         "val": {
-                          "vec": []
+                          "map": []
                         }
                       },
                       {
@@ -72,42 +54,39 @@
                           "symbol": "users"
                         },
                         "val": {
-                          "vec": [
+                          "map": [
                             {
-                              "map": [
-                                {
-                                  "key": {
-                                    "symbol": "address"
+                              "key": {
+                                "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                              },
+                              "val": {
+                                "map": [
+                                  {
+                                    "key": {
+                                      "symbol": "balance"
+                                    },
+                                    "val": {
+                                      "i64": 100
+                                    }
                                   },
-                                  "val": {
-                                    "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
-                                  }
-                                },
-                                {
-                                  "key": {
-                                    "symbol": "balance"
+                                  {
+                                    "key": {
+                                      "symbol": "past_payments"
+                                    },
+                                    "val": {
+                                      "vec": []
+                                    }
                                   },
-                                  "val": {
-                                    "i64": 100
+                                  {
+                                    "key": {
+                                      "symbol": "received_messages"
+                                    },
+                                    "val": {
+                                      "vec": []
+                                    }
                                   }
-                                },
-                                {
-                                  "key": {
-                                    "symbol": "past_transactions"
-                                  },
-                                  "val": {
-                                    "vec": []
-                                  }
-                                },
-                                {
-                                  "key": {
-                                    "symbol": "received_messages"
-                                  },
-                                  "val": {
-                                    "vec": []
-                                  }
-                                }
-                              ]
+                                ]
+                              }
                             }
                           ]
                         }
@@ -120,39 +99,6 @@
             "ext": "v0"
           },
           4095
-        ]
-      ],
-      [
-        {
-          "contract_data": {
-            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
-            "key": {
-              "ledger_key_nonce": {
-                "nonce": 801925984706572462
-              }
-            },
-            "durability": "temporary"
-          }
-        },
-        [
-          {
-            "last_modified_ledger_seq": 0,
-            "data": {
-              "contract_data": {
-                "ext": "v0",
-                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
-                "key": {
-                  "ledger_key_nonce": {
-                    "nonce": 801925984706572462
-                  }
-                },
-                "durability": "temporary",
-                "val": "void"
-              }
-            },
-            "ext": "v0"
-          },
-          6311999
         ]
       ],
       [
@@ -263,38 +209,37 @@
               }
             ],
             "data": {
-              "map": [
+              "vec": [
                 {
-                  "key": {
-                    "symbol": "address"
-                  },
-                  "val": {
-                    "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
-                  }
+                  "map": [
+                    {
+                      "key": {
+                        "symbol": "balance"
+                      },
+                      "val": {
+                        "i64": 100
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "past_payments"
+                      },
+                      "val": {
+                        "vec": []
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "received_messages"
+                      },
+                      "val": {
+                        "vec": []
+                      }
+                    }
+                  ]
                 },
                 {
-                  "key": {
-                    "symbol": "balance"
-                  },
-                  "val": {
-                    "i64": 100
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "past_transactions"
-                  },
-                  "val": {
-                    "vec": []
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "received_messages"
-                  },
-                  "val": {
-                    "vec": []
-                  }
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 }
               ]
             }
