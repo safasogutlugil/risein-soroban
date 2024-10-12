@@ -1,14 +1,10 @@
 [package]
-name = "camping-reservation-contract"
+name = "payment-contract"
 version = "0.1.0"
 edition = "2021"
 
 [lib]
 crate-type = ["cdylib"]
-
-[[bin]]
-name = "camping_cli"
-path = "src/main.rs"
 
 [dependencies]
 soroban-sdk = "21.7.3"
