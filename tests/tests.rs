@@ -1,4 +1,4 @@
-use risein::{PaymentContract, PaymentContractClient};
+use risein_soroban::{PaymentContract, PaymentContractClient};
 use soroban_sdk::{Env, vec, Symbol, Address};
 
 #[test]
